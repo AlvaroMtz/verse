@@ -1,7 +1,7 @@
 'use strict'
 
-import {Sequelize} from 'sequelize'
-import {setupDatabase} from '../lib/db.js'
+const Sequelize = require('sequelize')
+const setupDatabase = require('../lib/db.js')
 
 module.exports = function setupMetricModel (config) {
   const sequelize = setupDatabase(config)

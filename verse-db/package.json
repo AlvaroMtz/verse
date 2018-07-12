@@ -4,15 +4,20 @@
   "description": "IoT Platform - DB Module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "DEBUG=verse:* node setup.js",
     "lint": "standard"
   },
   "author": "Alvaro",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^0.25.0",
     "standard": "^11.0.1"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "inquire": "^0.4.8",
+    "inquirer": "^6.0.0",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.38.0"
